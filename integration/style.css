@@ -14,7 +14,11 @@ h1 {
 }
 
 img {
+<<<<<<< HEAD
     border: 3px solid #5a5050;
+=======
+    border-radius: 3000000px;
+>>>>>>> inte-challenge3
 }
 
 .image-container {
@@ -49,6 +53,10 @@ nav ul li {
 /*******************************presentation*****************/
 
 #presentation {
+<<<<<<< HEAD
+=======
+    background-color: rgb(2, 10, 17);
+>>>>>>> inte-challenge3
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -60,7 +68,11 @@ nav ul li {
 }
 
 .nom h2 {
+<<<<<<< HEAD
     color: rgb(8, 15, 22);
+=======
+    color: rgb(209, 216, 223);
+>>>>>>> inte-challenge3
     text-transform: uppercase;
 
 }
@@ -78,7 +90,11 @@ nav ul li {
     padding: 2%;
 }
 
+<<<<<<< HEAD
 .allprojets {
+=======
+.all-projets {
+>>>>>>> inte-challenge3
     margin-top: 5%;
     display: flex;
     gap: 5%;
@@ -93,7 +109,11 @@ nav ul li {
 
 .projet img {
     width: 100%;
+<<<<<<< HEAD
     height: 400px;
+=======
+    height: 300px;
+>>>>>>> inte-challenge3
 }
 
 /*****************etudes***************************/
@@ -110,10 +130,22 @@ nav ul li {
 }
 
 .profil img {
+<<<<<<< HEAD
     width: 100%;
     height: 400px;
 }
 
+=======
+    width: 30%;
+    height: 200px;
+    
+}
+
+.info1 {
+    display: fl3x;
+    align-items: center;
+} 
+>>>>>>> inte-challenge3
 /*****************articles***************************/
 
 .articles {
@@ -130,4 +162,9 @@ nav ul li {
 #articles img {
     width: 100%;
     height: 400px;
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> inte-challenge3
