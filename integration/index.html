@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="voici mon portfolio">
     <title>monportfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">>
 </head>
 
 <body>
@@ -19,7 +20,6 @@
                 <li><a href="#">etudes</a></li>
                 <li><a href="#">articles</a></li>
                 <li><a href="#">articles</a></li>
-
             </ul>
         </nav>
 
@@ -39,7 +39,9 @@
 
                 <div class="projet">
                     <h3>projet1</h3>
-                    <img src="restaurant.avif" alt="restaurant">
+                    <div class="image-container">
+                        <img src="backgroundhome.jpeg" alt="acceuil" class="hover-effect" class="black-and-white" />
+                    </div>
                     <p>Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore
@@ -58,7 +60,7 @@
 
                 <div class="projet">
                     <h3>projet2</h3>
-                    <img src="restaurant.avif" alt="restaurant">
+                    <img src="restaurant.avif" alt="restaurant" class="hover-effect" id="back-and-white" />
                     <p>Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore
@@ -77,7 +79,7 @@
 
                 <div class="projet">
                     <h3>projet3</h3>
-                    <img src="restaurant.avif" alt="restaurant">
+                    <img src="restaurant.avif" alt="restaurant" class="hover-effect" />
                     <p>Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore
@@ -180,11 +182,9 @@
                 </div>
 
             </div>
-
-            <div class="article2">
-
-                <img src="nounours.jpg" alt="nounours">
-                <h3>article1</h3>
+            <article class="article2">
+                <img src="index.html" alt="nounours" class="hover-effect" />
+                <h3>article2</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et distinctio amet rem dolor vel illo at
                     laudantium odio, rerum iusto qui hic consequatur similique? Sed nobis eos voluptatum nesciunt
                     pariatur.
