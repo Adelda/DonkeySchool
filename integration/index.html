@@ -6,18 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="voici mon portfolio">
     <title>monportfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
     <header>
         <h1>MON PORTFOLIO</h1>
         <nav>
-            <ul>
-                <li><a href="#">projets</a></li>
-                <li><a href="#">etudes</a></li>
-                <li><a href="#">articles</a></li>
-                <li><a href="#">articles</a></li>
+            <ul id="menu-deroulant">
+                <li><a href="#">menu-deroulant</a>
+                    <ul>
+                        <li><a href="#projets">projets</a></li>
+                        <li><a href="#etudes">etudes</a></li>
+                        <li><a href="#articles">articles</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </li>
+
+                <!-- Autres éléments de la barre de navigation -->
             </ul>
         </nav>
         <nav id="menu-deroulant"></nav>
@@ -34,7 +40,7 @@
                 <div class="projet">
                     <h3>projet1</h3>
                     <div class="image-container">
-                        <img src="backgroundhome.jpeg" alt="acceuil" class="hover-effect" class="black-and-white" />
+                        <img src="backgroundhome.jpeg" alt="acceuil" class="hover-effect" />
                     </div>
                     <p>Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit,
@@ -51,7 +57,7 @@
                 </div>
                 <div class="projet">
                     <h3>projet2</h3>
-                    <img src="restaurant.avif" alt="restaurant" class="hover-effect" id="back-and-white" />
+                    <img src="restaurant.avif" alt="restaurant" class="hover-effect" id="black-and-white" />
                     <p>Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore
@@ -83,7 +89,7 @@
                 </div>
             </div>
         </section>
-        <section class="etudes">
+        <section id="etudes">
             <h2>ETUDES</h2>
             <div class="profil">
                 <img src="nounours.jpg" alt="nounours" class="hover-effect" />
@@ -130,8 +136,10 @@
                 <div class="article1">
                     <img src="nounours.jpg" alt="nounours" class="hover-effect" />
                     <h3>article1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et distinctio amet rem dolor vel illo
-                        at laudantium odio, rerum iusto qui hic consequatur similique? Sed nobis eos voluptatum nesciunt
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et distinctio amet rem dolor vel
+                        illo
+                        at laudantium odio, rerum iusto qui hic consequatur similique? Sed nobis eos voluptatum
+                        nesciunt
                         pariatur.
                     </p>
                     <div class="btn-com">
@@ -139,30 +147,20 @@
                         <p>commentaires</p>
                     </div>
                 </div>
+
+                <article class="article2">
+                    <img src="nounours.jpg" alt="nounours" class="hover-effect" />
+                    <h3>article2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et distinctio amet rem dolor vel illo
+                        at
+                        laudantium odio, rerum iusto qui hic consequatur similique? Sed nobis eos voluptatum nesciunt
+                        pariatur.
+                    </p>
+                    <div class="btn-com">
+                        <button>lire</button>
+                        <p>commentaires</p>
+                    </div>
             </div>
-            <article class="article2">
-                <img src="index.html" alt="nounours" class="hover-effect" />
-                <h3>article2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et distinctio amet rem dolor vel illo at
-                    laudantium odio, rerum iusto qui hic consequatur similique? Sed nobis eos voluptatum nesciunt
-                    pariatur.
-                </p>
-                <div class="btn-com">
-                    <button>lire</button>
-                    <p>commentaires</p>
-                </div>
-            </article>
-            <div class="article3">
-                <img src="nounours.jpg" alt="nounours" class="hover-effect" />
-                <h3>article3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et distinctio amet rem dolor vel illo at
-                    laudantium odio, rerum iusto qui hic consequatur similique? Sed nobis eos voluptatum nesciunt
-                    pariatur.
-                </p>
-                <div class="btn-com">
-                    <button>lire</button>
-                    <p>commentaires</p>
-                </div>
             </div>
         </section>
         <section id="contact">
@@ -181,7 +179,7 @@
         </section>
     </main>
     <footer>
-        <h4>monportfolio.com</h4>
+            <p>monportfolio.com</p>
     </footer>
 </body>
 
