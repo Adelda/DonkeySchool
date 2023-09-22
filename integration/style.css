@@ -1,16 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+    text-transform: none;
+    text-decoration: none;
+    list-style: none;
+}
 h1 {
     text-align: center;
     margin-top: 5%;
-}
-
-#menu-deroulant {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    z-index: 1000;
-
 }
 
 img {
@@ -19,7 +17,6 @@ img {
 
 .image-container {
     position: relative;
-
 }
 
 #black-and-white:nth-child(2) {
@@ -30,21 +27,6 @@ img {
     filter: grayscale(100%);
 }
 
-
-nav {
-    margin-top: 5%;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 5%;
-}
-
-nav ul li {
-    border: 1px solid black;
-    padding: 1%;
-}
 
 /*******************************presentation*****************/
 
@@ -83,13 +65,11 @@ nav ul li {
     margin-top: 5%;
     display: flex;
     gap: 5%;
-
 }
 
 .projet {
     display: flex;
     flex-direction: column;
-
 }
 
 .projet img {
@@ -99,7 +79,7 @@ nav ul li {
 
 /*****************etudes***************************/
 
-.etudes {
+#etudes {
     padding-top: 3%;
     display: flex;
     flex-direction: column;
@@ -113,7 +93,6 @@ nav ul li {
 .profil img {
     width: 30%;
     height: 200px;
-    
 }
 
 .info1 {
@@ -122,11 +101,21 @@ nav ul li {
 } 
 /*****************articles***************************/
 
+.all-articles{
+    display: flex;
+    justify-content: space-around;
+    padding: 5%;
+}
+
+.article1, .article2 {
+    margin-left: 3%;
+}
 .articles {
     padding-top: 3%;
     display: flex;
     flex-direction: column;
     padding: 2%;
+    margin-left: 5%;
 }
 
 .hover-effect:hover {
@@ -134,7 +123,144 @@ nav ul li {
 }
 
 #articles img {
-    width: 100%;
-    height: 400px;
+    width: 70%;
+    height: 300px;
 }
 
+/*****************contact***************************/
+
+#contact {
+    background-color: #f7f7f7;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/***********menu deroulant********************/
+
+#menu-deroulant{
+    display: flex;
+    justify-content: center;
+
+
+
+}
+#menu-deroulant a{
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#menu-deroulant ul a{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    width: 80%;
+
+}
+#menu-deroulant ul a:hover{
+
+    color: rgb(32, 94, 208);
+
+
+}
+
+#menu-deroulant ul li {
+    display: inherit;
+
+    width: 100%;
+    background-color: red;
+}
+
+#menu-deroulant ul li:hover {
+    border-radius: 0;
+}
+#menu-deroulant ul li:first-child {
+    border-radius: 0 0 0px 0px;
+}
+
+#menu-deroulant ul li:last-child {
+    border-radius: 0 0 8px 8px;
+}
+#menu-deroulant ul li:nth-child(3) {
+    border-radius: 0 0 0px 0px;
+}
+#menu-deroulant ul li:nth-child(2) {
+    border-radius: 0 0 0px 0px;
+}
+
+#menu-deroulant ul {
+    position: absolute;
+    z-index: 1000;
+    max-height: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden; /***ne sort pas du cadre***/
+
+}
+
+#menu-deroulant li:hover ul {
+    max-height: 35em;
+}
+
+/*****background des liens menus *******/
+#menu-deroulant li {
+    background-color: #0976f3;
+   width:80%;
+    text-align:center;
+    position: relative;
+    border-radius: 8px 8px 0 0;
+}
+
+/*****footer *******/
+
+footer {
+    height: 200px;
+    width: 100%;
+    background-color: gray;
+    text-align: center;
+}
+
+footer p {
+    padding: 12%;
+    font-size: 2em;
+}
